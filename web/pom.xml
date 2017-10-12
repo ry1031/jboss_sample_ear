@@ -74,6 +74,8 @@
          <artifactId>hibernate-jpa-2.0-api</artifactId>
          <scope>provided</scope>
       </dependency>
+      
+
 
        <!-- JSR-303 (Bean Validation) Implementation -->
        <!-- Provides portable constraints such as @Email -->
@@ -89,11 +91,13 @@
                </exclusion>
            </exclusions>
        </dependency>
-
+       
        <dependency>
-       	<groupId>org.jboss.spec.javax.ejb</groupId>
-       	<artifactId>jboss-ejb-api_3.1_spec</artifactId>
-       </dependency>
+            <groupId>org.jboss.spec.javax.ejb</groupId>
+            <artifactId>jboss-ejb-api_3.1_spec</artifactId>
+            <scope>provided</scope>
+        </dependency>
+		
    </dependencies>
 
    <build>

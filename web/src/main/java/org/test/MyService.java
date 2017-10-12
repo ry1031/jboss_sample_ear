@@ -8,10 +8,11 @@ import javax.jws.WebService;
 public class MyService {
 	
 	@EJB
-	private ConfigRepo repo;
+	private WelcomeService service;
 
 	@WebMethod
 	public String getWelcomeMsg(String name) {
-		return repo.getConfigVal("prefix1") + name;
+		return service.getWelcomeMsg(name);
 	}
+
 }
